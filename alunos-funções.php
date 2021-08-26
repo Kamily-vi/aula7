@@ -113,6 +113,12 @@ echo "A média da Turma B é: $mediaTurmaB";
 // escreva uma função que altere a nota de um aluno específico
 
 function alterarNotaAluno(array $turma, $nome, $novaNota){
-    
+    foreach($turma as $aluno){
+        if($aluno["nome"] == $nome){
+            $aluno["nota"] = "novaNota";
+            return;
+        }
+
+    }
 }
 
